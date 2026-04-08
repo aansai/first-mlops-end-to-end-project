@@ -1,0 +1,38 @@
+stages:
+  data_gathering:
+    cmd: python C:\1ML\src\data\data_gatherin.py
+    deps:
+    - src\data\data_gatherin.py
+    outs:
+    - data/raw
+  data_cleaning:
+    cmd: python src/features/data_cleaning.py
+    deps:
+    - data/raw
+    - src/features/data_cleaning.py
+    outs:
+    - data/interim
+  Feature Eng:
+    cmd: python C:\1ML\src\features\feature_eng.py
+    deps:
+    - data/interim
+    - src\features\feature_eng.py
+    outs:
+    - data/external
+  model_build:
+    cmd: python src/model/model_eval.py
+    deps:
+    - data/interim/df_feature.csv
+    - params.yaml
+    - src/model/model_eval.py
+    params:
+    - model
+    outs:
+    - data/model/model.pkl
+  model_registry:
+    cmd: python src/model_registry.py
+    deps:
+    - data/interim/df_feature.csv
+    - src/model_registry.py
+    outs:
+    - data/model_registry

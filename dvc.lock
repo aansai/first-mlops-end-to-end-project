@@ -1,0 +1,33 @@
+schema: '2.0'
+stages:
+  data_gathering:
+    cmd: python C:\1ML\src\data\data_gatherin.py
+    deps:
+    - path: src\data\data_gatherin.py
+      hash: md5
+      md5: 595ab84fa0875206838890deeeea484a
+      size: 1313
+    outs:
+    - path: data/raw
+      hash: md5
+      md5: 0135991d4d3633b6f00a1315f35b0d24.dir
+      size: 999977
+      nfiles: 1
+  data_cleaning:
+    cmd: python src/features/data_cleaning.py
+    deps:
+    - path: data/raw
+      hash: md5
+      md5: 0135991d4d3633b6f00a1315f35b0d24.dir
+      size: 999977
+      nfiles: 1
+    - path: src/features/data_cleaning.py
+      hash: md5
+      md5: 5b98a832916c0369f5c212fc0dc28871
+      size: 6466
+    outs:
+    - path: data/interim
+      hash: md5
+      md5: 726d513a4b38d2dbbc20cedbf76e80fe.dir
+      size: 999951
+      nfiles: 1

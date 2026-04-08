@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/1ML/mlruns/966102748947670157/c86bca335bce42ad926cbfb7ae0e4937/artifacts
+end_time: 1775648369040
+entry_point_name: ''
+experiment_id: '966102748947670157'
+lifecycle_stage: active
+run_id: c86bca335bce42ad926cbfb7ae0e4937
+run_name: calm-gnat-553
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1775648368973
+status: 4
+tags: []
+user_id: Dell 11th

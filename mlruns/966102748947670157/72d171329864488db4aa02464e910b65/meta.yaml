@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/1ML/mlruns/966102748947670157/72d171329864488db4aa02464e910b65/artifacts
+end_time: 1775648399084
+entry_point_name: ''
+experiment_id: '966102748947670157'
+lifecycle_stage: active
+run_id: 72d171329864488db4aa02464e910b65
+run_name: nebulous-cat-375
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1775648399031
+status: 4
+tags: []
+user_id: Dell 11th

@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/1ML/mlruns/966102748947670157/e7d65de1ea1e4c47869bcaf9f1a998c3/artifacts
+end_time: 1775648817061
+entry_point_name: ''
+experiment_id: '966102748947670157'
+lifecycle_stage: active
+run_id: e7d65de1ea1e4c47869bcaf9f1a998c3
+run_name: merciful-bat-28
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1775648817010
+status: 4
+tags: []
+user_id: Dell 11th

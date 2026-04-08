@@ -1,0 +1,8 @@
+artifact_location: file:///C:/1ML/mlruns/966102748947670157
+creation_time: 1775648368574
+experiment_id: '966102748947670157'
+last_update_time: 1775648368574
+lifecycle_stage: active
+name: Employees_classification_modelreg
+trace_location: null
+workspace: default

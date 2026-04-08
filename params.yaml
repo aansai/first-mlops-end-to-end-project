@@ -14,3 +14,19 @@ model:
   od_wait: 50
   verbose: 0
   random_state: 42
+
+data_gathering:                                        
+  source_path: "C:/1ML/Messy_HR_Dataset_Detailed.csv"
+  bucket_name: "vanfduert5dfvndfvkf"
+  s3_key: "data/raw/df_gath.csv"
+  local_save_path: "data"
+
+data_preprocessing:
+  input_s3_key: "data/raw/df_gath.csv"
+  output_s3_key: "data/processed/df_processed.csv"
+  local_save_path: "data"
+
+feature_engineering:
+  input_s3_key: "data/processed/df_processed.csv"
+  output_s3_key: "data/featured/df_featured.csv"
+  local_save_path: "data"
